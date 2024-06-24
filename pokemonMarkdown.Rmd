@@ -1,0 +1,49 @@
+---
+title: "PokemonProject"
+author: "Juliette"
+date: "2024-06-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+R was used in this project for some minor data manipulation to aid with building visualizations. 
+
+
+> pokemon.df <- as.data.frame(pokemon_1_)
+ 
+> print(head(pokemon.df))
+     #      Name   Type Total HP Attack Defense Special Attack
+1  001 Bulbasaur  GRASS   318 45     49      49             65
+2  001 Bulbasaur POISON   318 45     49      49             65
+3  002   Ivysaur  GRASS   405 60     62      63             80
+4  002   Ivysaur POISON   405 60     62      63             80
+5  003  Venusaur  GRASS   525 80     82      83            100
+6  003  Venusaur POISON   525 80     82      83            100
+  Special Defense Speed
+1              65    45
+2              65    45
+3              80    60
+4              80    60
+5             100    80
+6             100    80
+
+> avgSpeed = mean(pokemon.df$Speed)
+> print(avgSpeed)
+[1] 68.58647
+
+> avgAttack = mean(pokemon.df$Attack)
+> print(avgAttack)
+[1] 78.81592
+
+> avgHP = mean(pokemon.df$HP)
+> print(avgHP)
+[1] 69.52568
+
+> avgDefense = mean(pokemon.df$Defense)
+> print(avgDefense)
+[1] 74.36986
+
+
